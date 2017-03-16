@@ -209,7 +209,7 @@ h2, h3 {
 }
 @media only screen and (max-width: 480px) {
     .headerWrapper {
-        background: url("../img/header/howAreYou.tiny.jpg") 15% 0 no-repeat !important;
+        background: url("../img/header/howAreYou.tiny.jpg") 35% 0 no-repeat !important;
         height: 320px;
     }
     .makeItDarker {
