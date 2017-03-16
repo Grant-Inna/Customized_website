@@ -32,8 +32,9 @@ body {
     }
 }
 @media only screen and (max-width: 480px) {
-    body { background: url("../img/background/back.tiny.jpg") 15% 0 !important;
-    }
+    body { background: url("../img/background/back.tiny.jpg") 15% 0 !important;}
+    p, span, legend { font-size: large;}
+    a { font-size: 0.7em;}
 }
 
 a {
@@ -57,7 +58,7 @@ figure {
 
 .wrapper {
     max-width: 1000px;
-    min-width: 500px;
+    min-width: 435px;
     width: 80%;
     margin: 0 auto;
     overflow: hidden; }
@@ -102,6 +103,10 @@ figure {
 @media screen and (max-width: 500px) {
     .aboutWrapper__figureModel {
         width: 43%; } }
+@media screen and (max-width: 480px) {
+    .aboutWrapper__figureModel {
+        width: 60%;
+        margin: 2% 20%; } }
 
 .listContainer {
     list-style: none;
@@ -136,9 +141,15 @@ a {
     letter-spacing: 1px;
     font-size: .9em;
     font-weight: bold; }
+@media only screen and (max-width: 480px) {
+    a { font-size: 0.7em;}
+}
 
 p, span, legend {
     font-size: x-large; }
+@media only screen and (max-width: 480px) {
+    p, span, legend { font-size: large;}
+}
 
 figcaption, i {
     font-size: medium; }
@@ -432,6 +443,12 @@ h2, h3 {
 .newExhibitionWrapper__text {
     width: 48%;
     float: right; }
+@media only screen and (max-width: 480px) {
+    .newExhibitionWrapper__text {
+        width: 75%;
+        float: left;}
+}
+
 
 .oldExhibitionWrapper {
     width: 100%;
