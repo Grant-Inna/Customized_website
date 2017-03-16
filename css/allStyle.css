@@ -145,11 +145,13 @@ h2, h3 {
     text-align: center; }
 
 .headerWrapper {
-    background: url("../img/header/howAreYou1.jpg") fixed;
+    background: url("../img/header/howAreYou1.jpg") 0 5% fixed;
     background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     text-align: center;
     color: #e9c25e; }
-
 .headerWrapper h1 {
     height: 100px;
     line-height: 75px;
@@ -163,9 +165,31 @@ h2, h3 {
     text-shadow: 2px 1px 5px #222222; }
 
 .makeItDarker {
-    min-height: 650px;
+    min-height: 600px;
     background: -webkit-linear-gradient(top, rgba(25, 25, 25, 0.9), rgba(255, 255, 255, 0.2));
     background: linear-gradient(to bottom, rgba(25, 25, 25, 0.9), rgba(255, 255, 255, 0.2)); }
+
+@media only screen and (max-width: 1024px) and (orientation:landscape) {
+    .headerWrapper { background: url("../img/header/howAreYou.medium.jpg") 50% 0 no-repeat fixed !important;
+        background-position:center;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .headerWrapper { background: url("../img/header/howAreYou.medium.jpg") 30% 25% no-repeat fixed !important;
+        background-position:center;
+    }
+    .makeItDarker {
+        height: 660px;
+    }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .headerWrapper {
+        background: url("../img/header/howAreYou.small.jpg") 15% 0 no-repeat fixed !important;
+    }
+    .makeItDarker {
+        height: 600px;
+    }
+}
 
 .navigationWrapper {
     background: #fff;
@@ -232,12 +256,11 @@ h2, h3 {
     clear: both; }
 .selfInfoWrapper h2 {
     background: url("../img/prettyBorder/prettyBorder1.png");
-    margin: 0 auto;
+    margin: 50px auto 0;
     height: 176px;
     width: 392px;
-    line-height: 225px;
+    line-height: 110px;
     background-repeat: no-repeat;
-    background-position: center;
     background-size: 390px;
     overflow: hidden;
     text-shadow: 2px 1px 7px #222222; }
@@ -278,13 +301,12 @@ h2, h3 {
     padding: 8% 0;
     clear: both; }
 .aboutWrapper h2 {
-    background: url("../img/prettyBorder/prettyBorder2.png");
+    background: url("../img/prettyBorder/prettyBorder2.png") 8px 0;
     margin: 0 auto;
     height: 176px;
     width: 432px;
-    line-height: 217px;
+    line-height: 130px;
     background-repeat: no-repeat;
-    background-position: center;
     background-size: 420px;
     overflow: hidden;
     text-shadow: 2px 1px 7px #222222; }
@@ -355,9 +377,8 @@ h2, h3 {
     margin: 0 auto;
     height: 176px;
     width: 392px;
-    line-height: 205px;
+    line-height: 70px;
     background-repeat: no-repeat;
-    background-position: center;
     background-size: 390px;
     overflow: hidden;
     text-shadow: 2px 1px 7px #222222; }
