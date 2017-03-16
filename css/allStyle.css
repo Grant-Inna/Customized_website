@@ -31,6 +31,10 @@ body {
     body { background: url("../img/background/back.small.jpg") 15% 0 !important;
     }
 }
+@media only screen and (max-width: 480px) {
+    body { background: url("../img/background/back.tiny.jpg") 15% 0 !important;
+    }
+}
 
 a {
     text-decoration: none;
@@ -201,6 +205,15 @@ h2, h3 {
     }
     .makeItDarker {
         height: 600px;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .headerWrapper {
+        background: url("../img/header/howAreYou.tiny.jpg") 15% 0 no-repeat !important;
+        height: 320px;
+    }
+    .makeItDarker {
+        height: 320px;
     }
 }
 
