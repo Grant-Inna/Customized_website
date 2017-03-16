@@ -13,11 +13,24 @@ body {
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    background: url("../img/back.jpg") fixed center;
+    background: url("../img/background/back.jpg");
     height: 100%;
     background-size: 100%;
     cursor: pointer;
     text-align: justify; }
+@media only screen and (max-width: 1024px) /*and (orientation:landscape)*/ {
+    body { background: url("../img/background/back.medium.jpg") 50% 0 !important;
+        background-position:center;
+    }
+}
+@media only screen and (max-width: 991px) {
+    body { background: url("../img/background/back.medium.jpg") 30% 25% !important;
+    }
+}
+@media only screen and (max-width: 767px) {
+    body { background: url("../img/background/back.small.jpg") 15% 0 !important;
+    }
+}
 
 a {
     text-decoration: none;
@@ -169,12 +182,12 @@ h2, h3 {
     background: -webkit-linear-gradient(top, rgba(25, 25, 25, 0.9), rgba(255, 255, 255, 0.2));
     background: linear-gradient(to bottom, rgba(25, 25, 25, 0.9), rgba(255, 255, 255, 0.2)); }
 
-@media only screen and (max-width: 1024px) and (orientation:landscape) {
-    .headerWrapper { background: url("../img/header/howAreYou.medium.jpg") 50% 0 no-repeat fixed !important;
+@media only screen and (max-width: 1024px) /*and (orientation:landscape)*/ {
+    .headerWrapper { background: url("../img/header/howAreYou.medium.jpg") 50% 0 !important;
         background-position:center;
     }
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (max-width: 991px) {
     .headerWrapper { background: url("../img/header/howAreYou.medium.jpg") 30% 25% no-repeat fixed !important;
         background-position:center;
     }
@@ -182,7 +195,7 @@ h2, h3 {
         height: 660px;
     }
 }
-@media only screen and (min-width: 0px) and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
     .headerWrapper {
         background: url("../img/header/howAreYou.small.jpg") 15% 0 no-repeat fixed !important;
     }
