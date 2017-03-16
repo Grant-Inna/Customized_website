@@ -145,7 +145,7 @@ h2, h3 {
     text-align: center; }
 
 .headerWrapper {
-    background: url("../img/header/howAreYou1.jpg") fixed no-repeat;
+    background: url("../img/header/howAreYou1.jpg") fixed;
     background-size: cover;
     text-align: center;
     color: #e9c25e; }
