@@ -207,7 +207,7 @@ h2, h3 {
         height: 600px;
     }
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 481px) {
     .headerWrapper {
         background: url("../img/header/howAreYou.tiny.jpg") 105% 0 no-repeat !important;
         height: 320px;
