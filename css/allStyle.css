@@ -58,10 +58,12 @@ figure {
 
 .wrapper {
     max-width: 1000px;
-    min-width: 435px;
     width: 80%;
     margin: 0 auto;
     overflow: hidden; }
+@media screen and (max-width: 1000px) {
+    .wrapper {
+        width: 90%; } }
 @media screen and (max-width: 1000px) {
     .wrapper {
         width: 90%; } }
@@ -77,12 +79,6 @@ figure {
 @media screen and (max-width: 750px) {
     .exhibition__sectionModel {
         width: 100%;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
         clear: both; } }
 
 .aboutWrapper__figureModel {
@@ -96,10 +92,7 @@ figure {
 @media screen and (max-width: 750px) {
     .aboutWrapper__figureModel {
         width: 38%;
-        margin-left: 4%;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center; } }
+        margin-left: 8%; } }
 @media screen and (max-width: 500px) {
     .aboutWrapper__figureModel {
         width: 43%; } }
@@ -165,9 +158,6 @@ h4 {
 
 h3 {
     padding-bottom: 5%; }
-
-h2 {
-    padding-bottom: 6%; }
 
 h2, h3 {
     text-align: center; }
@@ -313,12 +303,6 @@ h2, h3 {
 @media screen and (max-width: 750px) {
     .selfInfoWrapper__figure {
         width: 100%;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
         clear: both; } }
 @media screen and (max-width: 1200px) {
     .selfInfoWrapper__figure {
@@ -347,6 +331,10 @@ h2, h3 {
     background-size: 420px;
     overflow: hidden;
     text-shadow: 2px 1px 7px #222222; }
+@media screen and (max-width: 480px) {
+    .aboutWrapper h2 {
+        background-size: 385px;
+        background-position-x: 25px; } }
 
 .aboutWrapper__section {
     width: 100%;
@@ -426,12 +414,6 @@ h2, h3 {
 @media screen and (max-width: 750px) {
     .newExhibitionWrapper__waiting {
         width: 100%;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
         clear: both; } }
 
 .newExhibitionWrapper__figure {
@@ -458,12 +440,6 @@ h2, h3 {
 @media screen and (max-width: 750px) {
     .oldExhibitionWrapper__figure {
         width: 100%;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
         clear: both; } }
 
 .exhibitionWrapper__text {
