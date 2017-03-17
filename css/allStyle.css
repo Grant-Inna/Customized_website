@@ -306,7 +306,7 @@ h2, h3 {
     clear: both; }
 .selfInfoWrapper h2 {
     background: url("../img/prettyBorder/prettyBorder1.png");
-    margin: 50px auto 0;
+    margin: 0 auto;
     height: 176px;
     width: 392px;
     line-height: 110px;
@@ -346,7 +346,7 @@ h2, h3 {
     clear: both; }
 .aboutWrapper h2 {
     background: url("../img/prettyBorder/prettyBorder2.png") 8px 0;
-    margin: 0 auto;
+    margin: 100px auto 0;
     height: 176px;
     width: 432px;
     line-height: 130px;
