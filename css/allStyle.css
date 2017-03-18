@@ -271,6 +271,13 @@ h2, h3 {
     }
     .menuToggle {
         display: inline-block;
+        height: 25px;
+    }
+}
+@media only screen and (max-width: 481px) {
+    .navigationWrapper__listContainer {
+        width: 190px;
+        right: 38px;
     }
 }
 
@@ -302,7 +309,7 @@ h2, h3 {
 
 .selfInfoWrapper {
     width: 100%;
-    padding: 8% 0;
+    padding: 5% 0;
     clear: both; }
 .selfInfoWrapper h2 {
     background: url("../img/prettyBorder/prettyBorder1.png");
@@ -342,7 +349,7 @@ h2, h3 {
 
 .aboutWrapper {
     width: 100%;
-    padding: 8% 0;
+    padding: 5% 0;
     clear: both; }
 .aboutWrapper h2 {
     background: url("../img/prettyBorder/prettyBorder2.png") 8px 0;
@@ -415,10 +422,15 @@ h2, h3 {
 @media screen and (max-width: 1100px) {
     .heart {
         top: 15%; } }
+@media screen and (max-width: 767px) {
+    .heart {
+        background-size: 50px;
+        top: 0;} }
+
 
 .newExhibitionWrapper {
     width: 100%;
-    padding: 8% 0;
+    padding: 5% 0;
     clear: both; }
 .newExhibitionWrapper h2 {
     background: url("../img/prettyBorder/prettyBorder3.png");
@@ -457,7 +469,7 @@ h2, h3 {
 
 .oldExhibitionWrapper {
     width: 100%;
-    padding: 8% 0;
+    padding: 5% 0;
     clear: both; }
 
 @media screen and (max-width: 750px) {
