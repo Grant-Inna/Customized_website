@@ -244,7 +244,17 @@ h2, h3 {
     float: right;
     padding: 10px 0 10px 11px;
     display: none;
+}
 
+.icon-ellipsis-vert {
+    font-size: 21px;
+    margin-right: 0;
+    color: #353438; }
+.icon-ellipsis-vert:before {
+    margin-right: 0;
+}
+.icon-ellipsis-vert:hover {
+    color: forestgreen;
 }
 
 @media screen and (max-width: 1070px) {
@@ -309,7 +319,7 @@ h2, h3 {
 
 .selfInfoWrapper {
     width: 100%;
-    padding: 5% 0;
+    padding: 160px 0;
     clear: both; }
 .selfInfoWrapper h2 {
     background: url("../img/prettyBorder/prettyBorder1.png");
@@ -321,6 +331,19 @@ h2, h3 {
     background-size: 390px;
     overflow: hidden;
     text-shadow: 2px 1px 7px #222222; }
+
+@media screen and (max-width: 481px) {
+    .selfInfoWrapper h2 {
+        width: 100%;
+        line-height: 0;
+        background-size: 350px;
+        background-position-x: 35px;
+        background-position-y: 29px;
+        text-shadow: none;
+        font-size: x-large;
+        padding-top: 82px;
+    }
+}
 
 .selfInfoWrapper__figure {
     width: 35%;
@@ -349,7 +372,7 @@ h2, h3 {
 
 .aboutWrapper {
     width: 100%;
-    padding: 5% 0;
+    padding: 160px 0;
     clear: both; }
 .aboutWrapper h2 {
     background: url("../img/prettyBorder/prettyBorder2.png") 8px 0;
@@ -430,7 +453,7 @@ h2, h3 {
 
 .newExhibitionWrapper {
     width: 100%;
-    padding: 5% 0;
+    padding: 160px 0;
     clear: both; }
 .newExhibitionWrapper h2 {
     background: url("../img/prettyBorder/prettyBorder3.png");
@@ -469,7 +492,7 @@ h2, h3 {
 
 .oldExhibitionWrapper {
     width: 100%;
-    padding: 5% 0;
+    padding: 160px 0;
     clear: both; }
 
 @media screen and (max-width: 750px) {
