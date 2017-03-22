@@ -11,8 +11,6 @@ html, body {
 body {
     width: 100%;
     box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     background: url("../img/background/back.jpg");
     height: 100%;
     background-size: 100%;
@@ -50,7 +48,6 @@ figure {
 
 .bigBack {
     width: 100%;
-    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.3), rgba(251, 233, 200, 0.27));
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.3), rgba(251, 233, 200, 0.27));
     background-size: 100%; }
 
@@ -170,9 +167,6 @@ h2, h3 {
 .headerWrapper {
     background: url("../img/header/howAreYou1.jpg") 0 5% fixed;
     background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     text-align: center;
     color: #e9c25e; }
 .headerWrapper h1 {
@@ -189,7 +183,6 @@ h2, h3 {
 
 .makeItDarker {
     min-height: 600px;
-    background: -webkit-linear-gradient(top, rgba(25, 25, 25, 0.9), rgba(255, 255, 255, 0.2));
     background: linear-gradient(to bottom, rgba(25, 25, 25, 0.9), rgba(255, 255, 255, 0.2)); }
 
 @media only screen and (max-width: 1024px) and (orientation:landscape) {
@@ -238,7 +231,6 @@ h2, h3 {
 
 .navigationWrapper__item:hover {
     background: rgba(102, 204, 102, 0.3);
-    -webkit-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out;}
 
 .navigationWrapper__item a {
@@ -249,7 +241,6 @@ h2, h3 {
 .navigationWrapper__item {
     float: left;
     line-height: 17px;
-    -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out; }
 
 .menuToggle {
@@ -260,7 +251,6 @@ h2, h3 {
 }
 
 .icon-ellipsis-vert {
-    -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
     font-size: 21px;
     margin-right: 0;
@@ -270,7 +260,6 @@ h2, h3 {
 }
 .icon-ellipsis-vert:hover {
     color: forestgreen;
-    -webkit-transition: color .3s ease-in-out;
     transition: color .3s ease-in-out;
 }
 
@@ -310,16 +299,13 @@ h2, h3 {
 
 .headhesive {
     position: fixed;
-    -webkit-transform: translateY(-100%);
     transform: translateY(-100%);
     width: 100%;
     opacity: 0;
-    -webkit-transition: .7s ease-in-out;
     transition: .7s ease-in-out; }
 
 .headhesive--stick {
     position: fixed;
-    -webkit-transform: translateY(0);
     transform: translateY(0);
     width: 100%;
     opacity: 0.8;
@@ -327,11 +313,9 @@ h2, h3 {
 
 .headhesive--unstick {
     position: fixed;
-    -webkit-transform: translateY(-100%);
     transform: translateY(-100%);
     width: 100%;
     opacity: 0;
-    -webkit-transition: .1s ease-in-out;
     transition: .1s ease-in-out; }
 
 .selfInfoWrapper {
@@ -431,7 +415,6 @@ h2, h3 {
 
 .aboutWrapper__effectWrapper:hover img {
     border: 0.5px solid whitesmoke;
-    -webkit-transition: border .3s ease-in-out;
     transition: border .3s ease-in-out;
     border-radius: 50%;
     box-sizing: border-box;
@@ -443,27 +426,20 @@ h2, h3 {
     height: 70px;
     background-size: 60px;
     position: absolute;
-    -webkit-animation: beating 4s 2s infinite cubic-bezier(0.18, 1.68, 1, 0.24);
     animation: beating 4s 2s infinite cubic-bezier(0.18, 1.68, 1, 0.24); }
 @-webkit-keyframes beating {
     0% {
-        -webkit-transform: scale(1);
         transform: scale(1); }
     50% {
-        -webkit-transform: scale(1.2);
         transform: scale(1.2); }
     100% {
-        -webkit-transform: scale(1);
         transform: scale(1); } }
 @keyframes beating {
     0% {
-        -webkit-transform: scale(1);
         transform: scale(1); }
     50% {
-        -webkit-transform: scale(1.2);
         transform: scale(1.2); }
     100% {
-        -webkit-transform: scale(1);
         transform: scale(1); } }
 @media screen and (max-width: 1100px) {
     .heart {
@@ -559,18 +535,13 @@ h2, h3 {
 
 .footerWrapper {
     width: 100%;
-    padding: 20% 0 4%;
+    padding: 20% 0 15px;
     clear: both;
-    background: -webkit-linear-gradient(top, rgba(25, 25, 25, 0), rgba(34, 34, 34, 0.3));
     background: linear-gradient(to bottom, rgba(25, 25, 25, 0), rgba(34, 34, 34, 0.3));
     background-size: 100%; }
 
 .footerWrapper__listContainer {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
     justify-content: flex-end; }
 
 .footerWrapper__container_left {
@@ -594,8 +565,6 @@ h2, h3 {
     float: right;
     text-align: right; }
 .footerWrapper__container_right .footerWrapper__listContainer {
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 .footerWrapper__container_right h2 {
@@ -606,8 +575,6 @@ h2, h3 {
         float: none;
         text-align: left; }
     .footerWrapper__listContainer {
-        -webkit-box-pack: start;
-        -ms-flex-pack: start;
         justify-content: flex-start;
     }
 }
@@ -621,52 +588,37 @@ h2, h3 {
     height: 45px;
     border-radius: 50%;
     background-color: rgba(113, 113, 113, .5);
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -webkit-transition: all .8s ease-in-out;
     transition: all .8s ease-in-out;; }
 
 .footerWrapper__item .icon {
     font-size: x-large;
-    -webkit-align-self: center;
-    -ms-flex-item-align: center;
-    -ms-grid-row-align: center;
     align-self: center;
-    -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
 }
 .footerWrapper__listContainer .vkontakte:hover {
     background-color: #526e8f;
-    -webkit-transition: all .8s ease-in-out;
     transition: all .8s ease-in-out;
 }
 .footerWrapper__listContainer .vkontakte:hover .icon-vkontakte {
     color: #f5f5f5;
-    -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
 }
 .footerWrapper__listContainer .facebook:hover {
     background-color: #425497;
-    -webkit-transition: all .8s ease-in-out;
     transition: all .8s ease-in-out;
 }
 .footerWrapper__listContainer .facebook:hover .icon-facebook {
     color: #f5f5f5;
-    -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
 }
 .footerWrapper__listContainer .instagram:hover {
     background-color: #5c3812;
-    -webkit-transition: all .8s ease-in-out;
     transition: all .8s ease-in-out;
 }
 .footerWrapper__listContainer .instagram:hover .icon-instagram {
     color: #f5f5f5;
-    -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
 
 }
