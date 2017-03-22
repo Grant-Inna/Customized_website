@@ -612,29 +612,64 @@ h2, h3 {
     }
 }
 
+
+.footerWrapper__container_right .listContainer {
+    margin-top: 10px;
+}
 .footerWrapper__item {
-    position: relative;
     width: 45px;
     height: 45px;
     border-radius: 50%;
-    background-color: #353438;
+    background-color: rgba(113, 113, 113, .5);
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
-    justify-content: center;}
+    justify-content: center;
+    -webkit-transition: all .8s ease-in-out;
+    transition: all .8s ease-in-out;; }
 
 .footerWrapper__item .icon {
     font-size: x-large;
-    position: absolute;
-    top: 9px;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
 }
-/*.footerWrapper__item .icon-vkontakte {
-    left: 6px;
-}*/
-.footerWrapper__container_right .listContainer {
-    margin-top: 10px;
+.footerWrapper__listContainer .vkontakte:hover {
+    background-color: #526e8f;
+    -webkit-transition: all .8s ease-in-out;
+    transition: all .8s ease-in-out;
 }
+.footerWrapper__listContainer .vkontakte:hover .icon-vkontakte {
+    color: #f5f5f5;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+.footerWrapper__listContainer .facebook:hover {
+    background-color: #425497;
+    -webkit-transition: all .8s ease-in-out;
+    transition: all .8s ease-in-out;
+}
+.footerWrapper__listContainer .facebook:hover .icon-facebook {
+    color: #f5f5f5;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+.footerWrapper__listContainer .instagram:hover {
+    background-color: #5c3812;
+    -webkit-transition: all .8s ease-in-out;
+    transition: all .8s ease-in-out;
+}
+.footerWrapper__listContainer .instagram:hover .icon-instagram {
+    color: #f5f5f5;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+
+}
+
 
 
