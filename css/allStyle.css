@@ -388,10 +388,10 @@ h2, h3 {
     padding: 160px 0;
     clear: both; }
 .aboutWrapper h2 {
-    background: url("../img/prettyBorder/prettyBorder2.png") 8px 0;
+    background: url("../img/prettyBorder/prettyBorder2.png") 19px 0;
     margin: 100px auto 0;
     height: 176px;
-    width: 432px;
+    width: 438px;
     line-height: 130px;
     background-repeat: no-repeat;
     background-size: 420px;
@@ -593,6 +593,11 @@ h2, h3 {
     margin-top: 1%;
     float: right;
     text-align: right; }
+.footerWrapper__container_right .footerWrapper__listContainer {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
 .footerWrapper__container_right h2 {
     text-align: inherit; }
 @media screen and (max-width: 481px){
@@ -608,10 +613,28 @@ h2, h3 {
 }
 
 .footerWrapper__item {
-    width: 50px;
-    height: 50px;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    margin-right: 2%; }
+    position: relative;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #353438;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;}
+
+.footerWrapper__item .icon {
+    font-size: x-large;
+    position: absolute;
+    top: 9px;
+}
+/*.footerWrapper__item .icon-vkontakte {
+    left: 6px;
+}*/
+.footerWrapper__container_right .listContainer {
+    margin-top: 10px;
+}
+
 
