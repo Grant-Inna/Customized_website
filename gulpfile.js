@@ -1,37 +1,30 @@
 var gulp = require('gulp'),
+    groupCss = require('gulp-group-css-media-queries'),
     cleanCSS = require('gulp-clean-css'),
     notify = require("gulp-notify"),
     rename = require("gulp-rename"),
     autoprefixer = require('gulp-autoprefixer'),
-    livereload = require('gulp-livereload'),
-    connect = require('gulp-connect');
+    htmlmin = require('gulp-htmlmin');
 
 gulp.task('css', function() {
     return gulp.src('./dev/allStyle.css')
         .pipe(autoprefixer({browsers: ['last 5 versions', '> 5%']}))
+        .pipe(groupCss())
         .pipe(cleanCSS())
         .pipe(rename("style.min.css"))
-        .pipe(gulp.dest('app/style/'))
-        .pipe(connect.reload())
+        .pipe(gulp.dest('./app/style/'))
         .pipe(notify('Success!'));
 });
 
 gulp.task('html', function() {
-    gulp.src('app/index.html')
-    .pipe(connect.reload());
-
-});
-
-gulp.task('connect', function() {
-    connect.server({
-        root: 'app/',
-        livereload: true
-    });
+    return gulp.src('./dev/index.html')
+        .pipe(htmlmin({collapseWhitespace: true}))
+        .pipe(gulp.dest('./app/'));
 });
 
 gulp.task('watch', function() {
    gulp.watch('dev/allStyle.css', ['css'])
-   gulp.watch('app/index.html', ['html'])
+   gulp.watch('./app/index.html', ['html'])
 });
 
-gulp.task('default', ['css', 'html', 'watch', 'connect']);
+gulp.task('default', ['css', 'html', 'watch']);
