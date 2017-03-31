@@ -4,7 +4,8 @@ var gulp = require('gulp'),
     notify = require("gulp-notify"),
     rename = require("gulp-rename"),
     autoprefixer = require('gulp-autoprefixer'),
-    htmlmin = require('gulp-htmlmin');
+    htmlmin = require('gulp-htmlmin'),
+    removeHtmlComments = require('gulp-remove-html-comments');
 
 gulp.task('css', function() {
     return gulp.src('./dev/allStyle.css')
@@ -19,6 +20,7 @@ gulp.task('css', function() {
 gulp.task('html', function() {
     return gulp.src('./dev/index.html')
         .pipe(htmlmin({collapseWhitespace: true}))
+        .pipe(removeHtmlComments())
         .pipe(gulp.dest('./app/'));
 });
 
