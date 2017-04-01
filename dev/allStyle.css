@@ -212,6 +212,11 @@ h2, h3 {
         background: url("../img/header/howAreYou.tiny.jpg") no-repeat !important;
         height: 320px;
     }
+    .headerWrapper h1 {
+        font-size: 25px;
+        background-size: 300px;
+        line-height: 83px;
+    }
     .makeItDarker {
         background: linear-gradient(to bottom, rgba(25, 25, 25, 0.6), rgba(255, 255, 255, 0.1));
         height: 320px;
@@ -292,7 +297,7 @@ h2, h3 {
 }
 @media only screen and (max-width: 481px) {
     .navigationWrapper__listContainer {
-        width: 190px;
+        width: 250px;
         right: 38px;
     }
 }
@@ -552,6 +557,7 @@ h2, h3 {
     .footerWrapper__container_left {
         width: 95%;
         text-align: center;
+        margin-top: 15px;
     }
 }
 
@@ -573,8 +579,13 @@ h2, h3 {
     .footerWrapper__container_right {
         width: 95%;
         float: none;
-        text-align: left; }
+        text-align: center; }
+    .footerWrapper__container_right h2 {
+        text-align: center;
+    }
     .footerWrapper__listContainer {
+        width: 75%;
+        margin: auto;
         justify-content: flex-start;
     }
 }
