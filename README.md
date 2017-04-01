@@ -13,4 +13,4 @@
 Так же ожидаются письменные и фото материалы
 
 ### Результат ###
-Посмотреть результат можно  [здесь](https://grant-inna.github.io/Customized_website/)
+Посмотреть результат можно  [здесь](https://grant-inna.github.io/Customized_website/app)
