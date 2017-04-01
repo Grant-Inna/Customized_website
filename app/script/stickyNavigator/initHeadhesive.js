@@ -3,7 +3,7 @@
  */
 var options = {
   offset: 860
-}
+};
 
 
 var navigationWrapper = new Headhesive('.navigationWrapper', options);
