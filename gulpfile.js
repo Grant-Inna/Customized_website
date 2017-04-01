@@ -5,6 +5,7 @@ var gulp = require('gulp'),
     rename = require("gulp-rename"),
     autoprefixer = require('gulp-autoprefixer'),
     htmlmin = require('gulp-htmlmin'),
+    imagemin = require('gulp-imagemin'),
     removeHtmlComments = require('gulp-remove-html-comments');
 
 gulp.task('css', function() {
@@ -15,6 +16,30 @@ gulp.task('css', function() {
         .pipe(rename("style.min.css"))
         .pipe(gulp.dest('./app/style/'))
         .pipe(notify('Success!'));
+});
+
+gulp.task('compress', function() {
+    gulp.src('./dev/img/about/dalls/*')
+        .pipe(imagemin())
+        .pipe(gulp.dest('./app/img/about/dalls/'));
+        gulp.src('./dev/img/about/nose/*')
+        .pipe(imagemin())
+        .pipe(gulp.dest('./app/img/about/nose/'));
+        gulp.src('./dev/img/background/*')
+        .pipe(imagemin())
+        .pipe(gulp.dest('./app/img/background/'));
+        gulp.src('./dev/img/exhib/new/*')
+        .pipe(imagemin())
+        .pipe(gulp.dest('./app/img/exhib/new/'));
+        gulp.src('./dev/img/exhib/old/*')
+        .pipe(imagemin())
+        .pipe(gulp.dest('./app/img/exhib/old/'));
+        gulp.src('./dev/img/header/*')
+        .pipe(imagemin())
+        .pipe(gulp.dest('./app/img/header/'));
+        gulp.src('./dev/img/prettyBorder/*')
+        .pipe(imagemin())
+        .pipe(gulp.dest('./app/img/png/'));
 });
 
 gulp.task('html', function() {

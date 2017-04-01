@@ -15,9 +15,9 @@
     "gulp-clean-css": "^3.0.4",
     "gulp-group-css-media-queries": "^1.2.0",
     "gulp-htmlmin": "^3.0.0",
+    "gulp-imagemin": "^3.2.0",
     "gulp-notify": "^3.0.0",
     "gulp-remove-html-comments": "^1.0.1",
-    "gulp-rename": "^1.2.2",
-    "gulp-uncss": "^1.0.6"
+    "gulp-rename": "^1.2.2"
   }
 }
