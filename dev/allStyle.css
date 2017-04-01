@@ -172,7 +172,7 @@ h2, h3 {
 .headerWrapper h1 {
     height: 100px;
     line-height: 75px;
-    background: url("../img/prettyBorder/hBack.png") no-repeat center;
+    background: url("../img/png/hBack.png") no-repeat center;
     background-size: 390px;
     overflow: hidden;
     text-shadow: 2px 1px 7px #222222; }
@@ -323,7 +323,7 @@ h2, h3 {
     padding: 160px 0;
     clear: both; }
 .selfInfoWrapper h2 {
-    background: url("../img/prettyBorder/prettyBorder1.png");
+    background: url("../img/png/prettyBorder1.png");
     margin: 0 auto;
     height: 176px;
     width: 392px;
@@ -372,7 +372,7 @@ h2, h3 {
     padding: 160px 0;
     clear: both; }
 .aboutWrapper h2 {
-    background: url("../img/prettyBorder/prettyBorder2.png") 19px 0;
+    background: url("../img/png/prettyBorder2.png") 19px 0;
     margin: 100px auto 0;
     height: 176px;
     width: 438px;
@@ -421,7 +421,7 @@ h2, h3 {
     box-shadow: 0 0 75px white; }
 
 .heart {
-    background: url("../img/prettyBorder/heart.png") no-repeat center;
+    background: url("../img/png/heart.png") no-repeat center;
     width: 90px;
     height: 70px;
     background-size: 60px;
@@ -455,7 +455,7 @@ h2, h3 {
     padding: 160px 0;
     clear: both; }
 .newExhibitionWrapper h2 {
-    background: url("../img/prettyBorder/prettyBorder3.png");
+    background: url("../img/png/prettyBorder3.png");
     margin: 0 auto;
     height: 176px;
     width: 392px;
