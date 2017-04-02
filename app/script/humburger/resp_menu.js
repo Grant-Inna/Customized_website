@@ -6,10 +6,11 @@ $(function () {
                 $(this).removeAttr('style');
             }
         });
+        $('.navigationWrapper__listContainer').attr('id', 'pop-up');
     });
 
     $( '.bigBack' ).on('click', function() {
-        $('.navigationWrapper__listContainer').slideUp(250);
+        $('#pop-up').slideUp(250);
     })
 
 });
