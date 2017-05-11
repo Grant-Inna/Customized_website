@@ -120,5 +120,31 @@ a {
 }
 
 
+@media screen and (min-width: 375px) and (orientation: portrait){ /*iPhone 6 portrait*/
+
+}
+
+@media screen and (min-width: 667px) and (orientation: landscape){ /*iPhone 6 landscape*/
+
+}
+
+@media screen and (min-width: 414px) and (orientation: portrait){ /*iPhone 6 Plump portrait*/
+
+}
+
+@media screen and (min-width: 736px) and (orientation: landscape){ /*iPhone 6 Plump landscape*/
+
+}
+@media screen and (min-width: 768px) and (orientation: portrait){ /*iPad portrait*/
+
+}
+@media screen and (min-width: 1024px) and (orientation: landscape){ /*iPad landscape*/
+
+}
+
+
+
+
+
 
 
